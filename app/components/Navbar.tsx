@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isActive, setIsActive] = React.useState(false);
@@ -8,7 +9,7 @@ export default function Navbar() {
     <div>
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-          <a className="navbar-item" href="https://bulma.io">
+          <a className="navbar-item">
             <Image src="/favicon.ico" width={28} height={28} alt="logo" />
             <h1 className="title ml-3">IG Export</h1>
           </a>
@@ -34,9 +35,15 @@ export default function Navbar() {
           className={`navbar-menu ${isActive ? "is-active" : ""}`}
         >
           <div className="navbar-end">
-            <a className="navbar-item ">About</a>
-            <a className="navbar-item">Feature</a>
-            <a className="navbar-item">Pricing</a>
+            <a className="navbar-item" href="/#feature">
+              Feature
+            </a>
+            <a className="navbar-item" href="/#testimonials">
+              Testimonials
+            </a>
+            <a className="navbar-item" href="/#pricing">
+              Pricing
+            </a>
           </div>
 
           <div className="navbar-end">

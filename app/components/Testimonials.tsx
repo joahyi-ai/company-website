@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import Cta from "./Cta";
 
 export default function Testimonials() {
   return (
-    <div className=" block has-background-info-light mt-6">
+    <div className=" block has-background-info-light mt-6" id="testimonials">
       <h2 className="title is-capitalized has-text-centered pt-4">
         What Users Are saying about IG Export?
       </h2>
@@ -25,7 +26,7 @@ export default function Testimonials() {
                 </div>
                 <div className="media-content">
                   <p className="title is-4">Leslie Alexander</p>
-                  <p className="subtitle is-6">@lindsaywalton</p>
+                  <p className="subtitle is-6">@lesliealexander</p>
                 </div>
               </div>
 
@@ -69,6 +70,7 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
+      <Cta/>
     </div>
   );
 }

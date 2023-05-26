@@ -35,15 +35,9 @@ export default function Navbar() {
           className={`navbar-menu ${isActive ? "is-active" : ""}`}
         >
           <div className="navbar-end">
-            <a className="navbar-item" href="/#feature">
-              Feature
-            </a>
-            <a className="navbar-item" href="/#testimonials">
-              Testimonials
-            </a>
-            <a className="navbar-item" href="/#pricing">
-              Pricing
-            </a>
+            <a className="navbar-item">Feature</a>
+            <a className="navbar-item">Testimonials</a>
+            <a className="navbar-item">Pricing</a>
           </div>
 
           <div className="navbar-end">

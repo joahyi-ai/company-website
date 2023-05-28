@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Cta from "./Cta";
+import Link from "next/link";
 
 export default function Testimonials() {
   return (
@@ -70,7 +71,11 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
-      <Cta/>
+      <h1 className="title is-capitalized has-text-centered pb-4">
+        <Link href="/">
+          <button className="button is-link">Add to Chrome(It's FREE) </button>{" "}
+        </Link>
+      </h1>
     </div>
   );
 }

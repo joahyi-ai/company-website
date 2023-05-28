@@ -19,7 +19,7 @@ export default function Pricing() {
                 This is the basic plan
               </p>
               <div className="price">
-                <h2 className="title is-2 has-text-weight-bold has-text-info">
+                <h2 className="title is-2 has-text-weight-bold has-text-link">
                   $0<span className="has-text-weight-light">/month</span>
                 </h2>
               </div>
@@ -33,7 +33,7 @@ export default function Pricing() {
                 </p>
               </div>
               <div className="spacer"></div>
-              <button className="button is-info">Get Started Now</button>
+              <button className="button is-link">Get Started Now</button>
             </div>
             <div className="column  has-text-centered best_selling is-active">
               <h2 className="title is-3 plan_title has-text-white has-text-weight-bold">

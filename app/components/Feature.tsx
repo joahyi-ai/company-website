@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Cta from "./Cta";
 
 export default function Feature() {
   return (
@@ -24,11 +25,7 @@ export default function Feature() {
                 Export Instagram Followers/Following List To CSV In Minutes!
               </h1>
               <br />
-              <p className="has-text-centered">
-                <a className="button is-medium is-info">
-                  Add to Chrome(It's FREE)
-                </a>
-              </p>
+              <Cta />
             </div>
           </div>
         </div>

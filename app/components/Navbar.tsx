@@ -9,12 +9,13 @@ export default function Navbar() {
     <div>
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-          <a className="navbar-item">
+          <Link href="/" className="navbar-item">
             <Image src="/favicon.ico" width={28} height={28} alt="logo" />
             <h1 className="title ml-3">IG Export</h1>
-          </a>
+          </Link>
 
-          <a
+          <Link
+            href="/"
             onClick={() => {
               setIsActive(!isActive);
             }}
@@ -27,7 +28,7 @@ export default function Navbar() {
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-          </a>
+          </Link>
         </div>
 
         <div
@@ -35,24 +36,22 @@ export default function Navbar() {
           className={`navbar-menu ${isActive ? "is-active" : ""}`}
         >
           <div className="navbar-end">
-            <a className="navbar-item" href="#feature">
+            <Link className="navbar-item" href="#feature">
               Feature
-            </a>
-            <a className="navbar-item" href="#testimonials">
+            </Link>
+            <Link className="navbar-item" href="#testimonials">
               Testimonials
-            </a>
-            <a className="navbar-item" href="pricing">
+            </Link>
+            <Link className="navbar-item" href="pricing">
               Pricing
-            </a>
+            </Link>
           </div>
 
           <div className="navbar-end">
             <div className="navbar-item">
-              <div className="buttons">
-                <a className="button is-info">
-                  <strong>GET STARTED</strong>
-                </a>
-              </div>
+              <Link href="/" className="button is-link">
+                <strong>GET STARTED</strong>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,12 +1,13 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Cta() {
   return (
-    <div className="pb-5 ">
+    <div className="pb-5 m-auto">
       {" "}
-      <p className="has-text-centered">
-        <a className="button is-medium is-info">Add to Chrome(It's FREE)</a>
-      </p>
+      <Link href="/" className="button is-medium is-link has-text-centered">
+        Add to Chrome(It's FREE)
+      </Link>
     </div>
   );
 }
